@@ -1,0 +1,41 @@
+Node is a 'Runtime Environment' for executing Javascript code.
+
+--- node is built on Chrome's 'v8' javascript engine
+== node uses modules
+
+- gives you additional tools that the browser does not
+
+** NODE Is Asynchronous (non-blocking) by default.
+  --  a single thread is used to handle multiple requests
+
+   // opposedly -- Synchronus architecture the single thread waits on the return from the 1st request before it can move to any additional requests -- in synchronous achitecture you can run out of threads to query clients (ASP.net is synchronuous out of the box)
+
+in Node (asynchronous) when a request gets a response then it is sent to the 'Event Queue' - Node will check the 'Event Queue' continuously and process any information when available
+
+the asynchronuous nature of Node is ideal for I/O-intensive apps (apps that will need lots of server or disk access) without the need for more hardware
+
+     -- node is not good for CPU-intensive apps (including video encoding)
+
+// NPM Crash Course -
+-NODE Package Manager comes pre-installed with Node.js
+-installs modules or packages on the system
+
+package.json -- most important file in all of node.js
+  -- holds all the app dependencies
+    -can hold scripts
+
+npm init (in the app folder you want)
+
+
+you can uninstall dependencies with: npm uninstall app.name -- save (if you saved or --save-dev (if you saved as dev))
+ -- 'npm uninstall' or 'npm un' // also 'npm remove' or 'npm rm' will work
+
+ versions in NPM -- ex: version 8.2.6 
+   -- the '8' is the Major Version 
+   -- the '2' is the Minor Version which contains new features but does not break the API
+   -- the '6' is the latest patch which included bug fixes
+
+   ==sometimes a version has a '^' symbol will only update the latest Minor version of the package
+    == a '~' will update to the latest Patch version
+    == a '*' will update to the latest Major version and could possibly break the app
+

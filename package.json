@@ -1,0 +1,21 @@
+{
+    "name": "javascript_NodeJS_02",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "node ./js/main",
+        "server": "live-server"
+    },
+    "keywords": [],
+    "author": "J S Walley",
+    "license": "MIT",
+    "dependencies": {
+        "lodash": "^4.17.20"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.1.0",
+        "live-server": "^1.2.1"
+    }
+}
